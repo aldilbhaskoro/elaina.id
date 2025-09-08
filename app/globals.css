@@ -1,6 +1,12 @@
+/* Import TailwindCSS */
 @import "tailwindcss";
+
+/* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Inter:wght@700&family=Varela+Round&display=swap');
 
+/* ---------------------------
+   Custom Font Classes
+---------------------------- */
 .font-fredoka {
   font-family: 'Fredoka One', cursive;
 }
@@ -13,7 +19,11 @@
   font-family: 'Inter', sans-serif;
 }
 
+/* ---------------------------
+   Custom Utilities
+---------------------------- */
 @layer utilities {
+  /* Fade-in animation */
   @keyframes fadein {
     0% {
       opacity: 0;
@@ -29,6 +39,7 @@
     animation: fadein 1s ease-out both;
   }
 
+  /* Typing effect animation */
   @keyframes typing {
     from {
       width: 0;
@@ -38,21 +49,24 @@
     }
   }
 
+  /* Simulasi teks sedang diketik + cursor berkedip */
   .animate-typing {
     width: 0;
     animation: typing 2s steps(20, end) forwards, blink 0.7s infinite;
   }
 
+  /* Cursor blink effect (border kedip) */
   @keyframes blink {
     0%, 100% {
       border-color: transparent;
     }
     50% {
-      border-color: #A68A79;
+      border-color: #33588b; /* warna ungu-biru, bisa disesuaikan */
     }
   }
 }
 
+/* Utility untuk width agar menyesuaikan isi */
 .w-fit {
   width: fit-content !important;
 }

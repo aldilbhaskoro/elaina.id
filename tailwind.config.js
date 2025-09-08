@@ -14,8 +14,8 @@ module.exports = {
       },
       colors: {
         cream: "#FFF8F1",
-        mahiruBrown: "#A68A79",
-        mahiruText: "#6E5C52",
+        ElainaBrown: "#2839a5ff",
+        ElainaText: "#447278ff",
       },
     },
   },
